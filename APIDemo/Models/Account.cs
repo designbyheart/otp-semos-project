@@ -11,7 +11,7 @@ namespace APIDemo.Models
         public double Amount { get; set; }
         public AccountType Type { get; }
 
-       public Account(float fee, CardType card, AccountType type, string description, bool eBank)
+        public Account(float fee, CardType card, AccountType type, string? description = null, bool eBank = true)
         {
             this.EnabledEBank = eBank;
             this.MonthlyFee = fee;

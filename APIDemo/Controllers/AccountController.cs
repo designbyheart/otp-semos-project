@@ -12,8 +12,8 @@ namespace ApiDemo.Controllers
     [Route("[controller]")]
     public class AccountController : ControllerBase
     {
-        private readonly ILogger<WeatherForecastController> _logger;
-        public AccountController(ILogger<WeatherForecastController> logger)
+        private readonly ILogger<AccountController> _logger;
+        public AccountController(ILogger<AccountController> logger)
         {
             _logger = logger;
         }
@@ -21,11 +21,12 @@ namespace ApiDemo.Controllers
         [HttpGet(Name = "GetAccountTypes")]
         public IEnumerable<Account> Get()
         {
-            var accounts = new  List<Account>();
+            var accounts = new List<Account>();
             accounts.Add(new Account(0, CardType.Visa, AccountType.Klasik, "Ovo je klasik paket", true));
             accounts.Add(new Account(0, CardType.Visa, AccountType.Klasik, "Ovo je prestiz paket", true));
             accounts.Add(new Account(0, CardType.Visa, AccountType.Klasik, "Ovo je fluo paket", true));
-           return accounts;
+            return accounts;
         }
     }
+
 }
