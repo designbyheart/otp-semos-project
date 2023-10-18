@@ -22,8 +22,8 @@ namespace OtpWebDemo.Controllers
                 var response = await _httpClient.GetAsync($"api/User");
                 if (response.IsSuccessStatusCode)
                 {
-                    var userDetails = await response.Content.ReadFromJsonAsync<IEnumerable<User>>();
-                    return View(userDetails);
+                    var users = await response.Content.ReadFromJsonAsync<IEnumerable<User>>();
+                    return View(users);
                 }
 
                 ModelState.AddModelError(string.Empty, "Failed to retrieve user details.");

@@ -88,7 +88,7 @@ namespace OtpApiDemo.Controllers
         {
           if (_context.User == null)
           {
-              return Problem("Entity set 'OtpApiDemoContext.User'  is null.");
+              return Problem("Entity set 'OtpApiDemoContext.User' is null.");
           }
             try
             {
@@ -101,8 +101,8 @@ namespace OtpApiDemo.Controllers
             {
                 var errorResponse = new
                 {
-                    Message = exception.Message,
-                  //  Message = exception.InnerException?.Message
+                   // Message = exception.Message,
+                  Message = exception.InnerException?.Message
                 };
                 return BadRequest(errorResponse);
             }

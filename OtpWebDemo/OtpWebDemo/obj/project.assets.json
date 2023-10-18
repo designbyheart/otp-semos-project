@@ -9665,11 +9665,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\desig\\source\\repos\\OtpWebDemo\\OtpWebDemo\\OtpWebDemo.csproj",
+      "projectUniqueName": "C:\\Users\\desig\\source\\repos\\otp-semos-project\\OtpWebDemo\\OtpWebDemo\\OtpWebDemo.csproj",
       "projectName": "OtpWebDemo",
-      "projectPath": "C:\\Users\\desig\\source\\repos\\OtpWebDemo\\OtpWebDemo\\OtpWebDemo.csproj",
+      "projectPath": "C:\\Users\\desig\\source\\repos\\otp-semos-project\\OtpWebDemo\\OtpWebDemo\\OtpWebDemo.csproj",
       "packagesPath": "C:\\Users\\desig\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\desig\\source\\repos\\OtpWebDemo\\OtpWebDemo\\obj\\",
+      "outputPath": "C:\\Users\\desig\\source\\repos\\otp-semos-project\\OtpWebDemo\\OtpWebDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

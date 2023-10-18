@@ -22,5 +22,7 @@ namespace OtpApiDemo.Data
                 .HasIndex(u => u.Email)
                 .IsUnique();
         }
+
+        public DbSet<OtpApiDemo.Models.Account> Account { get; set; } = default!;
     }
 }
